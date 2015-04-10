@@ -19,5 +19,6 @@ public class TestMethodOverloading {
       System.out.println(average(1.0, 2.0)); 
       System.out.println(average(1, 2, 3));  
       System.out.println(average(1.0, 2)); 
+      System.out.println(average(1, 2, 3, 1));   
    }
 }
