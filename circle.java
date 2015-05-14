@@ -1,5 +1,5 @@
 class circle{
-	 double radius;
+	 private double radius;
 	private String color;
 
 	public circle(){
@@ -11,7 +11,7 @@ class circle{
 		color="pink";
 
 	}
-	public circle(double r, String c){
+	public circle(double r, String c){	
 		radius=r;
 		color=c;
 	}

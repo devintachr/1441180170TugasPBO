@@ -39,7 +39,7 @@ public class laptop {
 		}
 
 
-		public void menyala (){
+		public static void menyala (){
 			System.out.println("Welcome to Laptop");
 		}
 		public void mati (){
