@@ -9,7 +9,7 @@ public class menu
     {  int angka1;
         int angka2;
         int input;
-        for (int f=1; f<6;f++){
+        for (int f=1; f<999;f++){
   
                 System.out.println("Menu :");  
   
