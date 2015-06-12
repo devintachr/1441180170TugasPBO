@@ -1,26 +1,35 @@
 public class Segitiga{
-	int tinggi;
-	int alas;
+	double tinggi;
+	double alas;
+	double sisi;
 
-	public Segitiga(int inputTinggi, int inputAlas){
-		tinggi = inputAlas;
-		alas = inputAlas;
+	public void cetakKeLayar()
+	{
+		System.out.println("Segitiga");
+		System.out.println("alas : " +alas);
+		System.out.println("tinggi : " +tinggi);
+		System.out.println("sisi : " +sisi);
 	}
-	public int luasSegitiga(){
-		int luas;
-		luas = tinggi/2 *alas;
+
+	public void ubahProperty(double tinggiBaru, double alasBaru, double sisiBaru)
+	{
+		tinggi = tinggiBaru;
+		alas = alasBaru;
+		sisi = sisiBaru;
+	}
+
+	public double hitungLuas()
+	{
+		double luas;
+		luas = 0.5*alas*tinggi;
 		return luas;
 	}
-	public int kelilingSegitiga(){
-		int keliling;
-		keliling = 3*alas;
+
+	public double hitungKeliling()
+	{
+		double keliling;
+		keliling = 3 * sisi;
 		return keliling;
-	}
-	public void cetakHasil(){
-		System.out.println("Tinggi = "+tinggi);
-		System.out.println("Alas = "+alas);
-		System.out.println("Luas segitiga = "+ luasSegitiga());
-		System.out.println("Keliling segitiga = "+ kelilingSegitiga());
 	}
 
 }
