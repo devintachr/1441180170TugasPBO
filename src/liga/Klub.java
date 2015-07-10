@@ -19,4 +19,17 @@ public class Klub {
     public void setNamaKlub(String namaKlub) {
         this.namaKlub = namaKlub;
     }
+
+    public String getNamaLiga(ArrayList<Liga> daftarLiga,String klub){
+        String namaliga="klub tidak ditemukan";
+        for(int i=0;i<daftarLiga.size();i++){ // pengulangan untuk mengambil data tiap divisi
+            Liga liga = daftarLiga.get(i);
+            if(liga.getNamaKlub(klub).equals(namaliga)){
+            }else{
+                namaliga = "klub "+klub+" berada di liga "+liga.getNamaLiga();
+            }
+        }
+
+        return namaliga;
+    }
 }
